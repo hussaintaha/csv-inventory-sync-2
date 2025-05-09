@@ -38,14 +38,14 @@ export default function Index() {
                 Your product inventory syncs automatically from your SFTP folder. Keep your products inventory always up-to-date—no manual work needed!
               </Text>
               <div style={{ margin: '8px' }}></div>
-              <Button
+              {/* <Button
                 primary
                 onClick={handleSyncProduct}
                 loading={loading}
                 disabled={loading}
               >
                 {loading ? 'Syncing Products...' : 'Manually Sync Now'}
-              </Button>
+              </Button> */}
             </Card>
           </div>
         </Layout.Section>

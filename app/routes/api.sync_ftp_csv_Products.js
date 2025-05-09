@@ -213,6 +213,7 @@ export const loader = async () => {
         //     accessToken: process.env.SHOPIFY_ACCESS_TOKEN
         // }];
         console.log("API triggered of sync_ftp_csv_Products, shopData............", shopData);
+        if (!shopData.length) return { message: "No shop data found." };
 
         await downloadCsvFromFtp();
         await processCsvStreamed(shopData);
